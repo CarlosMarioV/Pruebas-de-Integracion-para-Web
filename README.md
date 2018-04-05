@@ -2,11 +2,11 @@
 
 # Introducción
 
-Las pruebas de integración para Web cambian un poco de las pruebas de Integración para lenguajes Orientados a Objetos, se realizan por medio de las peticiones de la (URL) para probar el Back-end (API) o se prueban las funciones del Front-end para calcular que este respondiendo de la mejor manera. La informacion necesaria para por la URL y se espera que respanda algo, se analiza la respuesta y si todo concuerda se da por pasada la prueba.
+Las pruebas de integración para Web cambian un poco de las pruebas de Integración para lenguajes Orientados a Objetos, se realizan por medio de las peticiones de la (URL) para probar el Back-end (API) o se prueban las funciones del Front-end para calcular que este respondiendo de la mejor manera. La informacion necesaria pasa por la URL y se espera que respanda algo, se analiza la respuesta y si todo concuerda se da por pasada la prueba.No es necesario hacer la pruebas desde el API se pueden realizar en el mismo servidor en tiempo de desarrollo, solo se tiene que tomar en consideración la forma en como su API empaqueta y devuelve los datos.
 
 ### Libreria usada para este ejemplo:
 
-La libreria [Jest](https://facebook.github.io/jest/docs/en/getting-started.html), ésta libreria es la principal "core" del ejemplo hecho aquí, en el sitio WEB se puede encontrar los pasos de instalación. Luego se utiliza [Expect](https://github.com/mjackson/expect) para expandir la sistaxis de prubas que se pueden hacer, esta segunda todavia no se ha implementado, fue donada a Jest por ende la información actualizada se encuentra ahí. Este ejemplo se puede instalar con npm install. El entorno tiene que tener _npm_ y _node_ instalados.
+La libreria [Jest](https://facebook.github.io/jest/docs/en/getting-started.html), ésta libreria es la principal "core" del ejemplo hecho aquí, en el sitio WEB se puede encontrar los pasos de instalación. Luego se utiliza [Expect](https://github.com/mjackson/expect) para expandir la sistaxis de prubas que se pueden hacer, esta segunda todavia no se ha implementado, fue donada a Jest por ende la información actualizada se encuentra ahí. El entorno tiene que tener _npm_ y _node_ instalados.
 
 #### Inicio
 
@@ -19,6 +19,9 @@ La libreria [Jest](https://facebook.github.io/jest/docs/en/getting-started.html)
 
 * calculadora.js
 * calculadora.test.js
+* llamadasAsincronas.capa1.js
+* llamadasAsincronas.capa2.js
+* llamadasAsincronas.test.js
 * package.json
 * README.md
 
@@ -45,7 +48,7 @@ test('Suma de 1 + 2 debe ser 3', () => {
 
 ### Ejecución de pruebas Asincronas
 
-Función en el archivo _llamadasAsincronas.test.js_ espera un resultados de las llamadas por callback hechas.
+Función en el archivo _llamadasAsincronas.test.js_ espera un resultado de las llamadas por callback hechas.
 
 ```javascript
 test('Espera el dato de una llamada Asincrona.', done => {
