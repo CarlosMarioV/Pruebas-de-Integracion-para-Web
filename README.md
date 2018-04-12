@@ -13,10 +13,11 @@ La libreria [Jest](https://facebook.github.io/jest/docs/es-ES/getting-started.ht
 * Ejecute
   * npm install
   * npm test
-    Las pruebas de ejecutaran y pasaran con exito.
+    * Las pruebas de ejecutaran y pasaran con exito.
 
 ### Estructura
 
+* .gitignore
 * calculadora.js
 * calculadora.test.js
 * llamadasAsincronas.capa1.js
