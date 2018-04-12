@@ -6,7 +6,7 @@ Las pruebas de integración para Web cambian un poco de las pruebas de Integraci
 
 ### Libreria usada para este ejemplo:
 
-La libreria [Jest](https://facebook.github.io/jest/docs/en/getting-started.html), ésta libreria es la principal "core" del ejemplo hecho aquí, en el sitio WEB se puede encontrar los pasos de instalación. Luego se utiliza [Expect](https://github.com/mjackson/expect) para expandir la sistaxis de prubas que se pueden hacer, esta segunda todavia no se ha implementado, fue donada a Jest por ende la información actualizada se encuentra ahí. El entorno tiene que tener _npm_ y _node_ instalados.
+La libreria [Jest](https://facebook.github.io/jest/docs/es-ES/getting-started.html), ésta libreria es la principal "core" del ejemplo hecho aquí, en el sitio WEB se puede encontrar los pasos de instalación. Luego se utiliza [Expect](https://github.com/mjackson/expect) para expandir la sistaxis de prubas que se pueden hacer, esta segunda todavia no se ha implementado, fue donada a Jest por ende la información actualizada se encuentra ahí. El entorno tiene que tener _npm_ y _node_ instalados.
 
 #### Inicio
 
@@ -25,7 +25,13 @@ La libreria [Jest](https://facebook.github.io/jest/docs/en/getting-started.html)
 * package.json
 * README.md
 
-_Nota_ Los test siempre llevan la extensión .test para que la libreria lea ese archivo como un "Test Suite". El ejemplo consta de una calculadora a la cual se le realizan las pruebas de Integración, si bien es cierto solo se hacen las pruebas a un archivo de ejemplo se puede adecuar para realizar las pruebas a diferentes archvios con ´´´javascript var calculadora = require('./calculadora.js'); ´´´ esto exportara las funciones a otros archivos y así si la respuesta es correcta significara que las integraciones de los archivos esta correcta y se estan comunicando correctamente.
+_Nota_ Los test siempre llevan la extensión .test para que la libreria lea ese archivo como un "Test Suite". El ejemplo consta de una calculadora a la cual se le realizan las pruebas de Integración, si bien es cierto solo se hacen las pruebas a un archivo de ejemplo se puede adecuar para realizar las pruebas a diferentes archvios con
+
+```javascript
+var archivo = require('./archivo.js');
+```
+
+esto exportara las funciones a otros archivos y así si la respuesta es correcta significara que las integraciones de los archivos esta correcta y se estan comunicando correctamente.
 
 ### Ejecución de pruebas normales.
 
