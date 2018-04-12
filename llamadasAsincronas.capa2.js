@@ -5,7 +5,7 @@ var milliseconds = 5000;
  * @param {any} callback function
  */
 exports.RetornarNombre = function RetornarNombre(callback) {
-  window.setTimeout(retornar(), milliseconds);
+  window.setTimeout(retornar(), milliseconds); //Simula el tiempo de espera de una ejecución normal a bases de datos.
   function retornar() {
     callback('Comunidad de Aplicaciones Moviles.');
     return;

@@ -6,7 +6,6 @@ var capa2 = require('./llamadasAsincronas.capa2');
  */
 exports.ObtenerNombre = function ObtenerNombre(callback) {
   capa2.RetornarNombre(function(res) {
-    //devuelve el dato en el callback.
-    callback(res);
+    callback(res); //Se devuelve el dato en el callback.
   });
 };

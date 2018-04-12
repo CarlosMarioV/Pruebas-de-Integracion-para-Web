@@ -6,6 +6,6 @@ var capa1 = require('./llamadasAsincronas.capa1');
 test('Espera el dato de una llamada Asincrona.', done => {
   capa1.ObtenerNombre(res => {
     expect(res).toBe('Comunidad de Aplicaciones Moviles.');
-    done();
+    done(); //Función llamada cuando se termine de ejecutar la anterior.
   });
 });
